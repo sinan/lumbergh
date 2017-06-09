@@ -1,0 +1,31 @@
+extends:
+  - standard
+
+plugins:
+  - standard
+  - prettier
+
+rules:
+  prettier/prettier:
+    - error
+    - printWidth: 80
+      singleQuote: true
+      trailingComma: es5
+      bracketSpacing: true
+      jsxBracketSameLine: false
+      parser: babylon
+      semi: false
+
+  no-return-assign: off
+  max-len:
+    - 2
+    - 80
+    - 2
+
+  comma-dangle:
+    - error
+    - only-multiline
+
+  space-before-function-paren:
+    - error
+    - never
