@@ -4,6 +4,7 @@
   "description": "a slack bot which keeps track of user activity of daily updates on a given team",
   "main": "lib/index.js",
   "scripts": {
+    "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
