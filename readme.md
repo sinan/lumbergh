@@ -17,10 +17,9 @@ Especially useful if your team has people from different timezones.
 I used env vars instead of a config file to avoid accidentally pushing slack api tokens.
 
 ```bash
-$ SLACK_API_TOKEN = <YOUR-SLACK-API-TOKEN>
-$ SLACK_CHANNEL = <YOUR-SLACK-CHANNEL-ID>
-$ make dist
-$ node lib/index.js
+$ export SLACK_API_TOKEN=<YOUR-SLACK-API-TOKEN>
+$ export SLACK_CHANNEL=<YOUR-SLACK-CHANNEL-ID>
+$ npm start
 ```
 
 You can use `forever` or similar task runners to make it run in the background or restart when killed etc.
@@ -46,9 +45,9 @@ Lumbergh checks the messages written in the last 24 hours. If it doesn't find a 
 Also, you can slightly customize the looks by defining these additional env vars before running the bot.
 
 ```
-$ SLACK_USERNAME = <CUSTOM-BOT-NAME>
-$ EMOJI = <BOT-EMOJI-INSTEAD-OF-AVATAR>
-$ AVATAR_URL = <CUSTOM-BOT-AVATAR-URL>
+$ export SLACK_USERNAME=<CUSTOM-BOT-NAME>
+$ export EMOJI=<BOT-EMOJI-INSTEAD-OF-AVATAR>
+$ export AVATAR_URL=<CUSTOM-BOT-AVATAR-URL>
 ```
 
 ### License
