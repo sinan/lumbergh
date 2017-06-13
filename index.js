@@ -111,7 +111,6 @@ let start = () => {
               }
               let text = message
               channel = SLACK_CHANNEL
-              channel = 'C3B6KA92S'
               let color = '#F2778A'
               let attachments = inactiveMembers.map(id => ({
                 text: `<@${id}>`,
